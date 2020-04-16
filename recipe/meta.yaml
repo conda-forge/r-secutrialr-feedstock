@@ -1,20 +1,20 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 {% set github = "https://github.com/SwissClinicalTrialOrganisation/secuTrialR" %}
 
 package:
   name: r-secutrialr
-  version: "{{ version }}"
+  version: {{ version }}
 
 source:
-  url: "{{ github }}/archive/{{ version }}.tar.gz"
-  sha256: 9dae54b415cf94ed1d3a386ea60415dacaaa7737a17e37e9aa424e668ddaab46
+  url: {{ github }}/archive/{{ version }}.tar.gz
+  sha256: 3c951c4e34c41456000375d4662ffa6290a558180c88ca2f269089990001ff47
 
 build:
   noarch: generic
   number: 0
-  script: 
+  script:
     - $R CMD INSTALL --build .            # [not win]
-    - "\"%R%\" CMD INSTALL --build ."  # [win]
+    - '"%R%" CMD INSTALL --build .'    # [win]
 
 requirements:
   host:
@@ -65,11 +65,11 @@ test:
 
 about:
   home: https://swissclinicaltrialorganisation.github.io/secuTrialR/
-  dev_url: "{{ github }}"
+  dev_url: {{ github }}
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: Handling of Data from the Clinical Data Management System secuTrial 
+  summary: Handling of Data from the Clinical Data Management System secuTrial
 
 extra:
   recipe-maintainers:
