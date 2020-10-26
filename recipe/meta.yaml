@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.0.6" %}
 {% set github = "https://github.com/SwissClinicalTrialOrganisation/secuTrialR" %}
 
 package:
@@ -7,11 +7,11 @@ package:
 
 source:
   url: {{ github }}/archive/{{ version }}.tar.gz
-  sha256: 842ffa0e073b0915a30b54071e62724ee701816c58ae3d0ddd34256aa099c39e
+  sha256: b3b5542cbc9f2ac60643dd2b9e0badc01c3debd4798d9e5fa8f6dcb19e3d0c1f
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   script:
     - $R CMD INSTALL --build .            # [not win]
     - '"%R%" CMD INSTALL --build .'    # [win]
