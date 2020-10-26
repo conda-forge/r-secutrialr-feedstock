@@ -5,11 +5,11 @@ Home: https://swissclinicaltrialorganisation.github.io/secuTrialR/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-secutrialr-feedstock/blob/master/LICENSE.txt)
 
 Summary: Handling of Data from the Clinical Data Management System secuTrial
 
-
+Development: https://github.com/SwissClinicalTrialOrganisation/secuTrialR
 
 Current build status
 ====================
