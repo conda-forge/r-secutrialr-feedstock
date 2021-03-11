@@ -1,4 +1,4 @@
-{% set version = "1.0.8" %}
+{% set version = "1.0.9" %}
 {% set github = "https://github.com/SwissClinicalTrialOrganisation/secuTrialR" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: {{ github }}/archive/{{ version }}.tar.gz
-  sha256: 5490f87cd57a8a74c88395be6e2f227ff56a79610f573e1d537ac48df12f3535
+  sha256: d60a8b8d512a544c179203152620b42f3769f78b3289f8699072133d9b13012b
 
 build:
   noarch: generic
