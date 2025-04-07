@@ -3,13 +3,11 @@ About r-secutrialr-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-secutrialr-feedstock/blob/main/LICENSE.txt)
 
-Home: https://swissclinicaltrialorganisation.github.io/secuTrialR/
+Home: https://github.com/SwissClinicalTrialOrganisation/secuTrialR
 
 Package license: MIT
 
-Summary: Handling of Data from the Clinical Data Management System secuTrial
-
-Development: https://github.com/SwissClinicalTrialOrganisation/secuTrialR
+Summary: Seamless and standardized interaction with data exported from the clinical data management system (CDMS) 'secuTrial'<https://www.secutrial.com>. The primary data export the package works with is a standard non-rectangular export.
 
 Current build status
 ====================
